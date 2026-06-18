@@ -10,19 +10,20 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    # Dark mode toggle
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    # Light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: amber
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Dark mode (default)
+    - scheme: slate
+      primary: amber
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   
   # Language and features
   language: en
@@ -203,8 +204,12 @@ extra:
       - reject
 
 # Footer
+# Extra CSS and JavaScript
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/custom.css
+
+extra_javascript:
+  - javascripts/custom.js
 
 # Build settings for GitHub Pages
 docs_dir: docs
